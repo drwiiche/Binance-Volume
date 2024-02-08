@@ -21,7 +21,7 @@
         $(document).ready(function () {
             var Lock = true;
             $("#volLimit").val(1)
-            var ws = new WebSocket("wss://www.bitmex.com/realtime?subscribe=trade:XBTUSD");
+            var ws = new WebSocket("wss://www.bitmex.com/realtime?subscribe=trade:DOGEUSD");
 
             ws.onopen = function (evt) {
                 console.log("Connection open ...");
@@ -36,7 +36,7 @@
                 console.log("Connection closed.");
             };
 
-            var Bwss = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
+            var Bwss = new WebSocket("wss://stream.binance.com:9443/ws/dogeusdt@trade")
             Bwss.onopen = function (evt) {
                 console.log("Connection open ...");
             };
@@ -122,7 +122,7 @@
         });
     </script>
 
-    <h3 align="center">BTC Price</h3>
+    <h3 align="center">DOGE Price</h3>
 
     <div>
         <table align="center" border="1">
